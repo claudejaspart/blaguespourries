@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+:root 
+{ 
+    --light-yellow : #FFFF8B;
+    --dark-yellow : #FFEE58;
+    --dark-red : #A30000;
+    --light-black : #1a1a1a;
+    --text : black;
+    --button-text : white;
+}
+
+body
+{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;    
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-black);
+    color : var(--text);
+    padding :  0 0%;
+    position: relative;
+}
+
+

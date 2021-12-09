@@ -1,0 +1,37 @@
+:host
+{
+    display: block;
+    
+    height: 50px;
+    background-color: var(--dark-yellow);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left:0%;
+    width: 100%;
+    line-height: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+footer
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span
+{
+    margin: 15px;
+}
+
+span:hover
+{
+    cursor: pointer;
+    font-weight: 400;
+}
