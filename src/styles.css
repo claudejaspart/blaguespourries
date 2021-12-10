@@ -1,3 +1,7 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~animate.css/animate.min";
+
+
 :root 
 { 
     --light-yellow : #FFFF8B;
@@ -18,7 +22,7 @@ body
     background-color: var(--light-black);
     color : var(--text);
     padding :  0 0%;
-    position: relative;
+    font-family: 'roboto', sans-serif;
 }
 
 
