@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     HeaderComponent,
     FooterComponent,
     CarouselComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule

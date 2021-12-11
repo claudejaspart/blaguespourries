@@ -20,7 +20,7 @@ span
     margin: 15px;
 }
 
-span:hover
+footer:hover
 {
     cursor: pointer;
     font-weight: 400;
