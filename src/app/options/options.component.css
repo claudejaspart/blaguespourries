@@ -1,0 +1,80 @@
+.card
+{
+    background-color: var(--dark-yellow);
+    font-size: 12px;
+}
+
+.about-header
+{
+    background-color: var(--light-yellow);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+}
+
+.close
+{
+    position: absolute;
+    top:6px;
+    right: 10px;
+}
+
+.close:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in .1s;
+}
+
+.option-form
+{
+    height: 100%;
+    padding : 50px 20px;
+    position: relative;
+}
+
+.reglages
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 25px;
+    height: 30px;
+}
+
+
+input
+{
+    margin-right: 10px;
+}
+
+button
+{
+    display: flex;
+    background-color: var(--dark-red);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border :1px solid transparent;
+    height: 25px;
+    width: 100%;
+}
+
+.message
+{
+    position: absolute;
+    bottom: 20px;
+    left:0px;
+    margin: 0 20px;
+    padding: 10px;
+    background-color: var(--light-yellow);
+}
+
+label
+{
+    transform: translateY(1px);
+}

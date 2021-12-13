@@ -1,0 +1,61 @@
+.card
+{
+    background-color: var(--dark-yellow);
+    font-size: 12px;
+}
+
+.contact-header
+{
+    background-color: var(--light-yellow);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span
+{
+    margin-left: 10px;
+}
+
+.contact-form
+{
+    height: 100%;
+    padding : 10px;
+}
+
+label
+{
+    font-size: 12px;
+    display: block;
+}
+
+input, textarea, button
+{
+    width: 100%;
+    background-color: var(--light-yellow);
+    border-radius: 5px;
+    border :1px solid black;
+    height: 25px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+textarea
+{
+    height: 75px;
+    resize: none;
+}
+
+button
+{
+    display: flex;
+    background-color: var(--dark-red);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
