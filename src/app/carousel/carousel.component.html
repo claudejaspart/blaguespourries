@@ -5,11 +5,13 @@
     
     <div class="main-sub">
 
-      <app-sidemenu></app-sidemenu>
-      <!-- <app-cards></app-cards> -->
-      <!-- <app-contact></app-contact> -->
-      <!-- <app-about></app-about> -->
-      <app-options></app-options>
+      <app-sidemenu (page)="displayPage($event)"></app-sidemenu>
+
+      <app-cards *ngIf="currentPage==='jokes'"></app-cards > 
+      <app-contact *ngIf="currentPage==='contact'"></app-contact> 
+      <app-about *ngIf="currentPage==='about'" (page)="displayPage($event)"></app-about> 
+      <app-options *ngIf="currentPage==='options'" (page)="displayPage($event)"></app-options> 
+      <app-privacy *ngIf="currentPage==='privacy'" (page)="displayPage($event)"></app-privacy>
 
     </div>
     

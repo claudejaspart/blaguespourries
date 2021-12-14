@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { JokesService } from '../jokes.service';
 
 @Component({
@@ -8,10 +8,17 @@ import { JokesService } from '../jokes.service';
 })
 export class CarouselComponent implements OnInit 
 {
+  currentPage : string = "jokes";
+
   constructor() 
   {}
 
   ngOnInit(): void 
   {}
+
+  displayPage(pageName : string)
+  {
+    this.currentPage = pageName;
+  }
   
 }

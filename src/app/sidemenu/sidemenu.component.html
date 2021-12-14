@@ -1,23 +1,23 @@
 <div class="menu-container d-flex shadow">
     
-    <div class="options">
+    <div class="options" (click)="displayOptions()">
         <i class="bi bi-gear"></i>
         Options
     </div>
-    
-    <div class="options">
-        <i class="bi bi-info"></i>
-        A&nbsp;propos
-    </div>
 
-    <div class="options">
+    <div class="options" (click)="displayContact()">
         <i class="bi bi-telephone-inbound"></i>
         Contact
     </div>
 
-    <div class="options">
+    <div class="options" (click)="displayAbout()">
+        <i class="bi bi-info-circle"></i>
+        A&nbsp;propos
+    </div>
+
+    <div class="options" (click)="displayPrivacy()">
         <i class="bi bi-file-earmark-medical"></i>
-        Termes
+        Donn&eacute;es
     </div>
 
 </div>

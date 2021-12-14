@@ -1,14 +1,14 @@
 <div class="card m-2 shadow" style="width: 270px; height:350px;">
     <div class="about-header">
         Options
-        <span class="close"><i class="bi bi-x-square"></i></span>
+        <span class="close" (click)="quitOptions()"><i class="bi bi-x-square"></i></span>
     </div>
 
     <div class="option-form">
 
         <div class="reglages">
             <input type="checkbox" name="norepeat">
-            <label for="norepeat">Ne pas revoir les blagues</label>
+            <label for="norepeat">Voir les blagues une seule fois</label>
         </div>
 
         <div class="reglages">
@@ -17,14 +17,13 @@
         </div>
 
         <div class="reglages">
-            <button>Réinitialiser les blagues vues</button>
+            <button (click)="showMessage()">Réinitialiser les blagues vues</button>
         </div>
 
 
-        <div class="message">
+        <div class="message" *ngIf="displayMessage">
             Blagues réinitialisées ! Vous pouvez désormais revoir toutes les blagues.
         </div>
-
 
     </div>
 </div>

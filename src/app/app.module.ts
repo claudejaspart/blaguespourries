@@ -5,12 +5,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { OptionsComponent } from './options/options.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CardsComponent } from './cards/cards.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +18,12 @@ import { CardsComponent } from './cards/cards.component';
     HeaderComponent,
     FooterComponent,
     CarouselComponent,
-    MainMenuComponent,
     SidemenuComponent,
     OptionsComponent,
     ContactComponent,
     AboutComponent,
-    CardsComponent
+    CardsComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule
