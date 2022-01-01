@@ -23,6 +23,7 @@ body
     color : var(--text);
     padding :  0 0%;
     font-family: 'roboto', sans-serif;
+    overflow:hidden;
 }
 
 

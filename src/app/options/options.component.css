@@ -41,7 +41,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
     height: 30px;
 }
 
@@ -66,10 +66,8 @@ button
 
 .message
 {
-    position: absolute;
-    bottom: 20px;
-    left:0px;
-    margin: 0 20px;
+    width: 100%;
+    margin: 0;
     padding: 10px;
     background-color: var(--light-yellow);
 }
