@@ -34,7 +34,7 @@ export class CardsComponent implements OnInit
   constructor(private jokesService: JokesService) 
   {
     // suppression historique pour les tests
-    localStorage.removeItem("card_history");
+    //localStorage.removeItem("card_history");
 
     // récupération de toutes les blagues
     this.jokesFullList = jokesService.Jokes;
@@ -44,6 +44,9 @@ export class CardsComponent implements OnInit
 
     // initialisation du curseur
     this.jokeCursor = this.jokeHistory.length - 1;
+
+    // affichage carte actuelle
+    this.currentJoke = this.jokesFullList[this.jokeHistory[this.jokeCursor]];
 
     // nouvelle carte
     this.nextCard();
@@ -67,7 +70,7 @@ export class CardsComponent implements OnInit
       if (this.jokeCursor > 0)
         this.animateNextCard();
       else
-        this.currentJoke = this.jokesFullList[this.jokeHistory[this.jokeCursor]]
+        this.currentJoke = this.jokesFullList[this.jokeHistory[this.jokeCursor]];
 
       // sauvegarde de l'historique
       this.saveCardHistory();

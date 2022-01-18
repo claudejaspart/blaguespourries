@@ -20,10 +20,16 @@ export class OptionsComponent implements OnInit
     this.page.emit("jokes");
   }
 
-  showMessage()
+  resetJokes()
   {
     this.displayMessage = true;
+    this.deleteCardHistory();
     setTimeout(()=>this.displayMessage = false, 5000)
+  }
+
+  deleteCardHistory()
+  {
+    localStorage.setItem("card_history", JSON.stringify([]));
   }
 
 }

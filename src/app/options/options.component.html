@@ -6,7 +6,7 @@
 
     <div class="option-form">
 
-        <div class="reglages">
+        <!-- <div class="reglages">
             <input type="checkbox" name="norepeat">
             <label for="norepeat">Voir les blagues une seule fois</label>
         </div>
@@ -14,10 +14,10 @@
         <div class="reglages">
             <input type="checkbox" name="hideads">
             <label for="hideads">Masquer la publicité</label>
-        </div>
+        </div> -->
 
         <div class="reglages">
-            <button (click)="showMessage()">Réinitialiser les blagues vues</button>
+            <button (click)="resetJokes()">Réinitialiser les blagues vues</button>
         </div>
 
         <div class="message" *ngIf="displayMessage">
