@@ -4,12 +4,12 @@
             animate__fadeOutLeft:exitOutCarousel===true}" 
             style="width: 270px; height:350px;" #jokecard>
 
-            <img src="{{selectedJoke.image}}" class="card-img-top" alt="owl">
+            <img src="{{currentJoke.image}}" class="card-img-top" alt="owl">
 
             <div class="card-body">
 
                 <!-- corps blague-->
-                <p class="card-text" style="height: 72px;">{{selectedJoke.main}}</p>
+                <p class="card-text" style="height: 72px;">{{currentJoke.main}}</p>
 
                 <!-- reponse-->
                 <div class="flip-card">
@@ -18,7 +18,7 @@
                             <span class="question-mark">?</span>
                         </div>
                         <div class="flip-card-back">
-                            <p class="answer">{{selectedJoke.answer}}</p>
+                            <p class="answer">{{currentJoke.answer}}</p>
                         </div>
                     </div>
                 </div>
