@@ -2,25 +2,41 @@
 
     <div class="contact-header">
         <span>Contact</span>
+        <span class="close" (click)="quitPage()"><i class="bi bi-x-square"></i></span>
     </div>
 
-    <form class="contact-form">
+    <form class="contact-form" (ngSubmit)="sendArticle()" #f="ngForm" *ngIf="!messageSent">
 
         <label>Nom</label>
-        <input>
+        <input name="lastname" [(ngModel)]="lastname"  type="text">
 
         <label>Pr&eacute;nom</label>
-        <input>
+        <input name="firstname" [(ngModel)]="firstname" type="text">
 
         <label>Email</label>
-        <input>
+        <input name="email"  [(ngModel)]="email" type="email">
 
         <label>Ton commentaire (ou une blague pourrie ...)</label>
-        <textarea></textarea>
+        <textarea name="message"  [(ngModel)]="message" type="text"></textarea>
 
-        <button>Envoyer</button>
+        <button type="submit">Envoyer</button>
 
     </form>
+
+    <div class="contact-form" *ngIf="messageSent">
+
+        <div class="message-sent">
+            <strong>Message envoyé !</strong>
+            &nbsp;<br>
+            &nbsp;<br>
+            Merci pour votre message !<br>
+            &nbsp;<br>
+            Il sera lu dans les plus brefs délais.<br>
+            &nbsp;<br>
+            En vous souhaitant une très bonne journée !
+        </div>
+
+    </div>
 
 
 
