@@ -1,6 +1,6 @@
 import {  Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { HttpClient, HttpEventType } from '@angular/common/http';
-import { NgForm } from '@angular/forms';
+
 
 
 export class HttpClientHelper
@@ -23,6 +23,7 @@ export class ContactComponent implements OnInit
   email: string = "";
   message : string = "";
   messageSent : boolean = false;
+  btnDisabled: boolean = true;
 
   constructor(private http: HttpClient) { }
 
@@ -38,25 +39,34 @@ export class ContactComponent implements OnInit
 
   sendArticle()
   {
-
-    // création d'un nouvel article
-    this.http
-    .post(`${HttpClientHelper.baseURL}/contact`, 
+    if (!this.btnDisabled)
     {
-      firstname: this.firstname,
-      lastname : this.lastname,
-      email : this.email,
-      message : this.message
-    }
-    ,{responseType:'text',observe:'events'})
-    .subscribe(event => 
-    {
-      if (event.type === HttpEventType.Response && event.status === 200)
+      // création d'un nouvel article
+      this.http
+      .post(`${HttpClientHelper.baseURL}/contact`, 
+        {
+        firstname: this.firstname,
+        lastname : this.lastname,
+        email : this.email,
+        message : this.message
+        }
+      ,{responseType:'text',observe:'events'})
+      .subscribe(event => 
       {
+        if (event.type === HttpEventType.Response && event.status === 200)
+        {
           this.messageSent = true;
-      }
-    });  
-    
+        }
+      });
+    }
+  }
+
+  checkForm()
+  {
+    if (this.firstname && this.lastname && this.email)
+      this.btnDisabled = false;
+    else  
+      this.btnDisabled = true;
   }
 
 }

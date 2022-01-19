@@ -86,3 +86,8 @@ button
     text-align: justify;
     padding: 10px;
 }
+
+.disabledbutton
+{
+    opacity: 50%;
+}

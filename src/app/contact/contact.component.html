@@ -8,18 +8,18 @@
     <form class="contact-form" (ngSubmit)="sendArticle()" #f="ngForm" *ngIf="!messageSent">
 
         <label>Nom</label>
-        <input name="lastname" [(ngModel)]="lastname"  type="text">
+        <input name="lastname" [(ngModel)]="lastname"  (change)="checkForm()" type="text" required>
 
         <label>Pr&eacute;nom</label>
-        <input name="firstname" [(ngModel)]="firstname" type="text">
+        <input name="firstname" [(ngModel)]="firstname" (change)="checkForm()" type="text" required>
 
         <label>Email</label>
-        <input name="email"  [(ngModel)]="email" type="email">
+        <input name="email"  [(ngModel)]="email" (change)="checkForm()" type="email" required>
 
         <label>Ton commentaire (ou une blague pourrie ...)</label>
-        <textarea name="message"  [(ngModel)]="message" type="text"></textarea>
+        <textarea name="message"  [(ngModel)]="message" type="text" required></textarea>
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" [ngClass]="{disabledbutton: btnDisabled}" [disabled]="btnDisabled">Envoyer</button>
 
     </form>
 
