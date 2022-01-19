@@ -41,6 +41,9 @@ export class ContactComponent implements OnInit
   {
     if (!this.btnDisabled)
     {
+      // desactivation du bouton
+      this.btnDisabled = true;
+
       // création d'un nouvel article
       this.http
       .post(`${HttpClientHelper.baseURL}/contact`, 

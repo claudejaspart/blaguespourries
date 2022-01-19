@@ -30,6 +30,9 @@ export class CardsComponent implements OnInit
   jokeCursor: number = 0;
   currentJoke : any;
 
+  // chemin des images
+  jokeImagePath: string = '../../assets/jokeimages/';
+
 
   constructor(private jokesService: JokesService) 
   {
