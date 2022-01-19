@@ -5,7 +5,7 @@ import { HttpClient, HttpEventType } from '@angular/common/http';
 
 export class HttpClientHelper
 {
-  static baseURL: string = 'http://localhost:4201';
+  static baseURL: string = 'https://blaguespourries.fr';
 }
 
 

@@ -9,6 +9,7 @@ export class SidemenuComponent implements OnInit
 {
 
   @Output() page = new EventEmitter<string>();
+  closemenu : boolean = false;
 
   constructor() { }
 
@@ -17,21 +18,25 @@ export class SidemenuComponent implements OnInit
 
   displayOptions()
   {
+    this.closemenu = true;
     this.page.emit("options");
   }
 
   displayContact()
   {
+    this.closemenu = true;
     this.page.emit("contact");
   }
 
   displayPrivacy()
   {
+    this.closemenu = true;
     this.page.emit("privacy");
   }
 
   displayAbout()
   {
+    this.closemenu = true;
     this.page.emit("about");
   }
 
