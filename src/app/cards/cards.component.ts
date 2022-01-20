@@ -49,10 +49,24 @@ export class CardsComponent implements OnInit
     this.jokeCursor = this.jokeHistory.length - 1;
 
     // affichage carte actuelle
-    this.currentJoke = this.jokesFullList[this.jokeHistory[this.jokeCursor]];
-
-    // nouvelle carte
-    this.nextCard();
+    if (!this.jokeHistory.length)
+    {
+      // nouvelle carte
+      this.nextCard();
+    }
+    else
+    {
+      if (this.jokeCursor > 0)
+      {
+         this.firstCard = false;
+      }
+      else if (this.jokeHistory.length >= (this.jokesFullList.length - 1))
+      {
+        this.lastCard = true;
+      }
+       
+      this.currentJoke = this.jokesFullList[this.jokeHistory[this.jokeCursor]];
+    }
   }
 
   ngOnInit(): void 

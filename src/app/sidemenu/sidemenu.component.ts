@@ -18,26 +18,30 @@ export class SidemenuComponent implements OnInit
 
   displayOptions()
   {
-    this.closemenu = true;
     this.page.emit("options");
+    this.closemenu = true;
+    setTimeout(()=>this.closemenu = false, 500);
   }
 
   displayContact()
   {
-    this.closemenu = true;
     this.page.emit("contact");
+    this.closemenu = true;
+    setTimeout(()=>this.closemenu = false, 500);
   }
 
   displayPrivacy()
   {
-    this.closemenu = true;
     this.page.emit("privacy");
+    this.closemenu = true;
+    setTimeout(()=>this.closemenu = false, 500);
   }
 
   displayAbout()
   {
-    this.closemenu = true;
     this.page.emit("about");
+    this.closemenu = true;
+    setTimeout(()=>this.closemenu = false, 500);
   }
 
 }
