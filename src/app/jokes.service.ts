@@ -149,7 +149,7 @@ export class JokesService {
     },
     {
       type: 'pourrie',
-      main: "Comment s'appelle le cul de la Schtroumpfette ?",
+      main: "Comment s'appelle les fesses de la Schtroumpfette ?",
       answer: "Le blu-ray.",
       image: 'blu.jpg'
     },
