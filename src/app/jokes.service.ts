@@ -397,7 +397,7 @@ export class JokesService {
       type: 'pourrie',
       main: "Comment se torche un nain ?",
       answer: "En courant dans l’herbe.",
-      image: 'nain.jpeg'
+      image: 'nain.jpg'
     },
     {
       type: 'pourrie',
@@ -547,7 +547,7 @@ export class JokesService {
       type: 'pourrie',
       main: "Pourquoi les girafes n'existent pas ?",
       answer: "Parce que c'est un coup monté.",
-      image: 'girage.jpg'
+      image: 'girafe.jpg'
     },
     {
       type: 'pourrie',
